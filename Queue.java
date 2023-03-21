@@ -12,4 +12,8 @@ public class Queue<T extends Comparable<T>> {
     public void show() {
         linkedList.show();
     }
+
+    public T dequeue(){
+        return linkedList.pop();
+    }
 }

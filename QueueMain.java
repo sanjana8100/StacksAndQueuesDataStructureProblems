@@ -10,5 +10,15 @@ public class QueueMain {
         System.out.println("The Queue:");
         queue.show();
         System.out.println();
+
+        Integer dequeueData;
+        do {
+            dequeueData = queue.dequeue();
+            if (dequeueData == null)
+                System.out.println("Queue is Empty");
+            else
+                System.out.println("The dequeued element is => " + dequeueData);
+            queue.show();
+        } while( dequeueData != null);
     }
 }
